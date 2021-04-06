@@ -4,7 +4,7 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
     <!-- handle marker with your own pattern -->
-    <a-marker type='pattern' url='p-play.patt'>
+    <a-marker type='pattern' url="p-play.patt">
       <video id="mivideo" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="play.mp4"></video>
       <a-video src="#mivideo" position="0 0 0" rotation="270 0 0" ></a-video>
     </a-marker>
