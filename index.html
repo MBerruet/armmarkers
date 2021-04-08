@@ -5,9 +5,29 @@
   <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false" 'sourceType: webcam;'>
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url="p-play.patt">
-      <video id="mivideo" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="play.mp4"></video>
-      <a-video src="#mivideo" position="0 0 0" rotation="270 0 0" ></a-video>
-    </a-marker>
+      <video id="mivideo1" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="play.mp4"></video>
+      <a-video src="#mivideo1" position="0 0 0" rotation="270 0 0" ></a-video>
+    
+         <script> 
+      var m1 = document.querySelector("a-marker")
+      m1.addEventListener("markerFound", (e)=>{
+      console.log("found")
+      var v1 = document.querySelector('#mivideo1').play();
+})
+      m1.addEventListener("markerLost", (e)=>{
+      console.log("lost")
+      var v1 = document.querySelector('#mivideo1').pause();
+  
+})
+
+
+document.querySelector("button").addEventListener("click", (e)=>{
+	console.log("Activar Sonido")
+  var v = document.querySelector('#mivideo1').muted=false;
+})
+     </script>
+        
+      </a-marker>
 
     <a-marker type='pattern' url="resources/markers/pattern-Individual_Blocks-1.patt">
       <video id="mivideo" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="play.mp4"></video>
