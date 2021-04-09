@@ -10,7 +10,9 @@
       <video id="mivideo3" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="3.mp4"></video>
       <video id="mivideo4" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="4.mp4"></video>
     </a-assets>
-    <a-video src="#mivideo1" position="0 0 0" rotation="270 0 0" ></a-video>
+    
+   <a-marker type='pattern' url="resources/markers/pattern-Individual_Blocks-1.patt">
+     <a-video src="#mivideo1" position="0 0 0" rotation="270 0 0" ></a-video>
     <script> 
       var m1 = document.querySelector("a-marker")
       m1.addEventListener("markerFound", (e)=>{
