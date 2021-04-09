@@ -6,7 +6,12 @@
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false" 'sourceType: webcam;'>
+<!--  <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false" 'sourceType: webcam;'> -->
+	  
+<a-scene markers_start vr-mode-ui="enabled: false" color-space="sRGB" renderer="gammaOutput: true"
+  embedded arjs='debugUIEnabled: false; sourceType: webcam; patternRatio: 0.85; trackingMethod: best;'>
+
+	  
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url="p-play.patt">
       <video id="mivideo1" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="play.mp4"></video>
