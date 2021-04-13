@@ -5,7 +5,7 @@
 <!-- https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js -->
 <body style='margin : 0px; overflow: hidden;'>
 <h1>      *************************</h1>
-<h1>      **** MBE 12-04 22.49 ****</h1>
+<h1>      **** MBE 12-04 23.03 ****</h1>
 	<a-scene markers_start vr-mode-ui="enabled: false" color-space="sRGB" renderer="gammaOutput: true"
 	embedded arjs='debugUIEnabled: false; sourceType: webcam; patternRatio: 0.85; trackingMethod: best;'>
 
@@ -27,7 +27,7 @@
 
 	<a-marker type='pattern' url="resources/markers/pattern-Individual_Blocks-2.patt">
 		<video id="mivideo2" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="2.mp4"></video>
-		<a-video src="#mivideo2" position="0 0 0" scale="1 1 1" rotation="270 0 0" ></a-video>
+		<a-video src="#mivideo2" rotation="270 0 0" ></a-video>
 		<script> 
 			var m2 = document.querySelector("a-marker")
 			m2.addEventListener("markerFound", (e)=>{
