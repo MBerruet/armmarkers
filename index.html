@@ -4,13 +4,14 @@
 <script src="aframe-ar.js"></script> 
 <!-- https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js -->
 <body style='margin : 0px; overflow: hidden;'>
-
+<h1>My **********************</h1>
+<h1>**** MBE 12-04 22.39 ****</h1>
 	<a-scene markers_start vr-mode-ui="enabled: false" color-space="sRGB" renderer="gammaOutput: true"
 	embedded arjs='debugUIEnabled: false; sourceType: webcam; patternRatio: 0.85; trackingMethod: best;'>
 
 	<a-marker type='pattern' url="resources/markers/pattern-Individual_Blocks-1.patt">
 		<video id="mivideo1" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="1.mp4"></video>
-		<a-video src="#mivideo1" position="0 1 0" scale="2 2 2" rotation="270 0 0" ></a-video>
+		<a-video src="#mivideo1" position="0 0 0" scale="1.3 1.3 1.3" rotation="270 0 0" ></a-video>
 		<script> 
 			var m1 = document.querySelector("a-marker")
 			m1.addEventListener("markerFound", (e)=>{
@@ -26,7 +27,7 @@
 
 	<a-marker type='pattern' url="resources/markers/pattern-Individual_Blocks-2.patt">
 		<video id="mivideo2" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="2.mp4"></video>
-		<a-video src="#mivideo2" position="0 1 0" scale="2 2 2" rotation="270 0 0" ></a-video>
+		<a-video src="#mivideo2" position="0 0 0" scale="1.3 1.3 1.3" rotation="270 0 0" ></a-video>
 		<script> 
 			var m2 = document.querySelector("a-marker")
 			m2.addEventListener("markerFound", (e)=>{
@@ -42,7 +43,7 @@
 
 	<a-marker type='pattern' url="resources/markers/pattern-Individual_Blocks-3.patt">
 		<video id="mivideo3" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="3.mp4"></video>
-		<a-video src="#mivideo3" position="0 1 0" scale="2 2 2" rotation="270 0 0" ></a-video>
+		<a-video src="#mivideo3" position="0 0 0" scale="1.3 1.3 1.3" rotation="270 0 0" ></a-video>
 		<script> 
 			var m3 = document.querySelector("a-marker")
 			m3.addEventListener("markerFound", (e)=>{
@@ -58,7 +59,7 @@
 
 	<a-marker type='pattern' url="resources/markers/pattern-Individual_Blocks-4.patt">
 		<video id="mivideo4" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="4.mp4"></video>
-		<a-video src="#mivideo4" position="0 1 0" scale="2 2 2" rotation="270 0 0" ></a-video>
+		<a-video src="#mivideo4" position="0 0 0" scale="1.3 1.3 1.3" rotation="270 0 0" ></a-video>
 		<script> 
 			var m4 = document.querySelector("a-marker")
 			m4.addEventListener("markerFound", (e)=>{
